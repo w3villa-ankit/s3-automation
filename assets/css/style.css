@@ -1,0 +1,97 @@
+
+/***************************
+
+Common css
+
+****************************/
+@import url('https://fonts.googleapis.com/css?family=Candal|Lexend+Deca&display=swap');
+*{
+	font-family: 'Candal', sans-serif;
+}
+body{
+	background-color: #f1f1f1;
+}
+a:hover{
+	text-decoration: none;
+}
+:root{
+	--var-theme-color: #61c5fb;
+}
+.lexend-font{
+	font-family: 'Lexend Deca', sans-serif;
+}
+.font-12{
+	font-size: 12px;
+}
+.font-60{
+	font-size: 60px;
+}
+.heading{
+	color: #525252;
+}
+.ts{
+	text-shadow: 1px 1px 11px #000;
+}
+.text-sky{
+	color: var(--var-theme-color);
+}
+
+/***************************
+
+Main css
+
+****************************/
+.banner{
+	background-image: url('../../assets/images/banner.png');
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.banner .transparent{
+	background-color: rgba(0,0,60, 0.8);
+	min-height: 100vh;
+}
+.top-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+.inner_side{
+	background: white;
+    padding: 30px;
+	border-top: 5px solid var(--var-theme-color);
+}
+.image_parent{
+    height: 60px;
+    width: 220px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.inner_side img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	margin: auto;
+}
+.inner_text {
+    min-height: 140px;
+}
+
+/***************************
+
+responsive
+
+****************************/
+@media screen and (max-width: 991px){
+	.banner .transparent{
+		padding-top: 50px; 
+		padding-bottom: 50px; 
+	}
+	.inner_side{
+		margin-bottom: 20px;
+	}
+	.font-40-sm{
+		font-size: 40px;
+	}
+}
